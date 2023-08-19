@@ -3,10 +3,86 @@ h1 {
 }
 
 .wrapp {
-   background-image: url(/images/bg-pattern-desktop.svg);
    width: 1440px;
    height: 800px;
-   border: 1px solid lightblue;
    margin: 0 auto;
-   border-radius: 15px;
+   display: grid;
+   grid-template-columns: 830px 610px;
+   grid-template-rows: 170px 630px 100px;
+
+   &-hero {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(#fff9f9, #fff8f9);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &-block {
+         height: 100%;
+         width: 100%;
+         padding: 6rem 21.5rem 0 16.5rem;
+
+         &-logo {
+            margin-bottom: 13.5rem;
+         }
+
+         &-title {
+            font-size: 8rem;
+            text-transform: uppercase;
+            color: $neutral-color;
+            line-height: 1;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            span {
+               font-weight: 300;
+               color: $primary-color-desaturated;
+               letter-spacing: 10px;
+               display: block;
+            }
+         }
+
+         &-text {
+            color: $primary-color-desaturated;
+            line-height: 1.6;
+            margin-bottom: 5rem;
+         }
+
+         &-input {
+            width: 445px;
+            height: 55px;
+            position: relative;
+
+            &-email {
+               height: 100%;
+               width: 100%;
+               border-radius: 50px;
+               border: none;
+               outline: none;
+               padding: 0 3rem;
+               border: 1px solid rgba(128, 128, 128, 0.623);
+               background: transparent;
+            }
+
+            &-btn {
+               position: absolute;
+               display: flex;
+               height: 100%;
+               top: 0;
+               right: 0;
+               width: 100px;
+               box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.363);
+               border-radius: 50px;
+               align-items: center;
+               justify-content: center;
+               background: linear-gradient(130deg, #f5b8b7, #f09394);
+            }
+         }
+      }
+   }
+
+   &-image {
+      grid-column: 2/3;
+      grid-row: 1/3;
+   }
 }
