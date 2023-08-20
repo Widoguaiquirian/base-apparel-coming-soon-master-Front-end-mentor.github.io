@@ -67,17 +67,25 @@
                   up-to-date with announcements and our launch deals.</p
                >
 
-               <div class="wrapp-hero-block-input">
-                  <input type="email" class="wrapp-hero-block-input-email" placeholder="Email Address" />
-                  <a href="#" class="wrapp-hero-block-input-btn">
+               <form class="wrapp-hero-block-form">
+                  <input type="email" class="wrapp-hero-block-form-email" placeholder="Email Address" required />
+                  <button type="submit" class="wrapp-hero-block-form-btn">
                      <img src="images/icon-arrow.svg" alt="icon" />
-                  </a>
-               </div>
+                  </button>
+                  <span class="wrapp-hero-block-form-error">Please provide a valid email</span>
+                  <span class="wrapp-hero-block-form-icon">
+                     <img src="images/icon-error.svg" alt="Error icon" />
+                  </span>
+               </form>
             </div>
          </div>
 
          <div class="wrapp-image">
-            <img src="/images/hero-desktop.jpg" alt="hero images" />
+            <picture>
+               <source media="(max-width:599px)" srcset="/images/hero-mobile.jpg" />
+               <source media="(min-width:600px)" srcset="/images/hero-desktop.jpg" />
+               <img src="/images/hero-desktop.jpg" alt="hero images" />
+            </picture>
          </div>
       </div>
       <script src="javascript/script.js"></script>
