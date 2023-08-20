@@ -63,7 +63,8 @@ h1 {
     background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(#fff9f9, #fff8f9);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    max-width: 100%; }
     .wrapp-hero-block {
       height: 100%;
       width: 100%;
@@ -75,7 +76,7 @@ h1 {
         text-transform: uppercase;
         color: #413a3a;
         line-height: 1;
-        font-weight: 400;
+        font-weight: 500;
         margin-bottom: 2rem; }
         .wrapp-hero-block-title span {
           font-weight: 300;
@@ -101,6 +102,8 @@ h1 {
           padding: 0 15rem 0 3rem;
           border: 1px solid rgba(128, 128, 128, 0.623);
           background: transparent; }
+          .wrapp-hero-block-form-email::placeholder {
+            color: #c2b5b6; }
         .wrapp-hero-block-form-btn {
           position: absolute;
           display: flex;
@@ -147,21 +150,20 @@ h1 {
       margin: 3rem; }
     .wrapp-image {
       grid-row: 2/3;
-      margin-bottom: 6.5rem;
       grid-column: 1/2; }
     .wrapp-hero {
       grid-row: 3/4; }
       .wrapp-hero-block {
-        padding: 0;
+        padding: 5rem 0;
         text-align: center; }
         .wrapp-hero-block-logo {
           display: none; }
         .wrapp-hero-block-title {
           font-size: 3rem;
-          padding: 0 5rem;
-          letter-spacing: 5px; }
+          padding: 0 4rem;
+          letter-spacing: 16px; }
           .wrapp-hero-block-title span {
-            letter-spacing: 5px; }
+            letter-spacing: 15px; }
         .wrapp-hero-block-text {
           padding: 0 3rem;
           font-size: 1.4rem; }
